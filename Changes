@@ -1,0 +1,98 @@
+Revision history for Perl extension Spreadsheet::SimpleExcel.
+
+0.01  Wed Oct 27 08:13:18 2004
+	- original version; created by h2xs 1.23 with options
+		-XA -n Spreadsheet::SimpleExcel
+
+0.02  Tue Nov 02 08:08:11 2004
+	- bug in add_row() and set_headers() fixed.
+
+0.03  Wed Nov 03 09:20:35 2004
+	- new methods:
+        	* output_as_string   returns the excel-data as a string
+                * output_to_file     prints excel-data to a file
+        - bug in set_headers() fixed
+
+0.1   Fri Jan 07 10:25:15 2005
+        - new methods:
+                * errstr             returns the error message of last occured error
+                * sort_worksheets    sort worksheets in asc or desc order
+        - bug in output*-methods fixed
+        - enhanced error handling
+
+0.2   Tue Jan 11 11:14:23 2005
+        - new method
+                * sheets             returns a list of all worksheets
+        - breaks sheets in several parts, if number of rows is greater than <lines> (32000)
+        - bug in _make_excel() fixed
+
+0.3   Mon Jan 17 09:44:12 2005
+        - bug in output*-methods fixed
+
+0.4   Mon Jan 17 10:48:32 2005
+        - bug in output*-methods fixed
+
+0.5   Wed Jan 26 10:33:18 2005
+        - simple format support:
+            * headers_format
+            * data_format
+            three formats allowed:
+              * 's'    string
+              * 'n'    number
+              * undef  default
+        - set_headers_format added
+        - set_data_format added
+        - bug in sort_data fixed
+
+0.6   Tue Nov 15 01:47:33 2005
+        - bug in output_to_file fixed
+        - joined sorts
+        - reset_sort added
+        
+0.7   Sat Dec 03 07:00:29 2005
+        - filter in output_to_file deleted
+        
+0.8   Wed Dec 07 14:19:41 2005
+        - support for "big" files implemented
+        
+0.9   Fri Jan 10 06:27:30 2006
+        - output_to_XML added
+        
+1.0   Mon Jan 13 03:54:23 2006
+        - changes in documentation
+        
+1.1   Thu Feb 15 22:59:44 2006
+        - one minor bug in _do_sort fixed
+
+1.2   Mon Oct 02 09:24:51 2006
+        - cell values starting with '=' are no longer string values
+          the default format of Spreadsheet::WriteExcel is used
+        + Test::Pod test added
+        + Test::Pod::Coverage test added
+        + Test::CheckManifest test added
+
+1.3   Mon Oct 30 17:33:12 2006
+        * output_to_test bug fixed: if filename is omitted and it was defined
+          for the constructor, the filename of constructor is taken.
+          
+1.4   Sun Nov 19 11:42:44 2006
+        Default Worksheet to several methods added to simplify life ;-)
+        
+1.5   Tue Nov 21 22:20:13 2006
+        Test scripts improved
+
+1.6   Thu Jul 05 09:10:11 2007
+        Test scripts improved
+
+1.7   Fri Jul 13 12:11:10 2007
+        Bugfix in sort_worksheets
+        Set the "last_sheet" in several methods
+        rename tests
+        added t/02_synopsis.t
+
+1.8   Sun Jul 15 10:11:12 2007
+        Bugfix in t/97_manifest.t
+        check for length of worksheet name
+
+1.9   Wed Jul 25 11:10:14 2007
+        Bugfix in length checking
