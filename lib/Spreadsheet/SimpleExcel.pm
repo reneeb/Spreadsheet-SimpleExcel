@@ -1,5 +1,7 @@
 package Spreadsheet::SimpleExcel;
 
+# ABSTRACT: Create Excel files with Perl
+
 use 5.006;
 use strict;
 use warnings;
@@ -8,7 +10,7 @@ use IO::Scalar;
 use IO::File;
 use XML::Writer;
 
-our $VERSION     = '1.9';
+our $VERSION     = '1.91';
 our $errstr      = '';
 
 sub new{
@@ -621,10 +623,6 @@ sub sheets{
 1;
 __END__
 
-=head1 NAME
-
-Spreadsheet::SimpleExcel - Create Excel files with Perl
-
 =head1 SYNOPSIS
 
   use Spreadsheet::SimpleExcel;
@@ -969,11 +967,6 @@ returns the title of the current worksheet.
 
 This module requires Spreadsheet::WriteExcel and IO::Scalar
 
-=head1 BUGS and COMMENTS
-
-Feel free to contact me and send me bugreports or comments on this module.
-Feature Requests or discussions are welcome at http://groups-beta.google.com/group/SpreadsheetSimpleExcel
-
 =head1 SEE ALSO
 
 Spreadsheet::WriteExcel
@@ -983,18 +976,5 @@ IO::Scalar
 IO::File
 
 XML::Writer
-
-=head1 AUTHOR
-
-Renee Baecker, E<lt>module@renee-baecker.deE<gt>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2004 by Renee Baecker
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.6.1 or,
-at your option, any later version of Perl 5 you may have available.
-
 
 =cut
