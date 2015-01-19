@@ -5,12 +5,13 @@ package Spreadsheet::SimpleExcel;
 use 5.006;
 use strict;
 use warnings;
+
 use Spreadsheet::WriteExcel;
 use IO::Scalar;
 use IO::File;
 use XML::Writer;
 
-our $VERSION     = '1.91';
+our $VERSION     = '1.92';
 our $errstr      = '';
 
 sub new{
@@ -621,7 +622,6 @@ sub sheets{
 }# end sheets
 
 1;
-__END__
 
 =head1 SYNOPSIS
 
