@@ -1,6 +1,6 @@
 [![Kwalitee status](https://cpants.cpanauthors.org/dist/Spreadsheet-SimpleExcel.png)](https://cpants.cpanauthors.org/dist/Spreadsheet-SimpleExcel)
 [![GitHub issues](https://img.shields.io/github/issues/reneeb/Spreadsheet-SimpleExcel.svg)](https://github.com/reneeb/Spreadsheet-SimpleExcel/issues)
-[![CPAN Cover Status](https://cpancoverbadge.perl-services.de/Spreadsheet-SimpleExcel-1.92)](https://cpancoverbadge.perl-services.de/Spreadsheet-SimpleExcel-1.92)
+[![CPAN Cover Status](https://cpancoverbadge.perl-services.de/Spreadsheet-SimpleExcel-1.93)](https://cpancoverbadge.perl-services.de/Spreadsheet-SimpleExcel-1.93)
 [![Cpan license](https://img.shields.io/cpan/l/Spreadsheet-SimpleExcel.svg)](https://metacpan.org/release/Spreadsheet-SimpleExcel)
 
 # NAME
@@ -9,7 +9,7 @@ Spreadsheet::SimpleExcel - Create Excel files with Perl
 
 # VERSION
 
-version 1.92
+version 1.93
 
 # SYNOPSIS
 
